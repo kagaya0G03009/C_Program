@@ -22,7 +22,7 @@ int main(void)
 	MainPage();
 
 
-
+	// printf text here
 }
 
 

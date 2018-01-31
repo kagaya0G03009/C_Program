@@ -20,8 +20,11 @@
 int main(void)
 {
 	MainPage();
+<<<<<<< HEAD
 	//clean qwe
 	// add me 
+=======
+>>>>>>> 75f37e6373f7578a78cf000d9bdbbacbfbeba087
 
 
 	// printf text here

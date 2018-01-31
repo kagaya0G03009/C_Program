@@ -18,7 +18,7 @@
 #define N 10000
 
 int main(void)
-{
+{	// add comment
 	MainPage();
 	//clean qwe
 

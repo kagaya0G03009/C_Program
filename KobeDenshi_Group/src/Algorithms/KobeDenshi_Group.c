@@ -18,12 +18,16 @@
 #define N 10000
 
 int main(void)
-{	// add comment comments here k
+{
 	MainPage();
+<<<<<<< HEAD
 	//clean qwe
 	// add me 
+=======
+>>>>>>> be655014a117bddb712938c76d1ea91987428d50
 
 
+	// printf text here
 }
 
 

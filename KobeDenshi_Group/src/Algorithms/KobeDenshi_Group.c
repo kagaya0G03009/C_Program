@@ -21,8 +21,6 @@ int main(void)
 {
 	MainPage();
 
-
-
 }
 
 

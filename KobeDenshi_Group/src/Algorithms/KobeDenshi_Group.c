@@ -18,7 +18,7 @@
 #define N 10000
 
 int main(void)
-{
+{	// this is mainpage
 	MainPage();
 
 }

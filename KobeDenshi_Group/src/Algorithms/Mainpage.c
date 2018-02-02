@@ -22,26 +22,30 @@ void MainPage()
 			switch(option)
 			{
 			case 1:
+				// Ok
 				printf("選択した番号1のスタック \n");
 				Stackpage();
 				break;
 			case 2:
+				// Ok
 				printf("選択した番号2のキュー \n");
 			    QueueMain();
 				break;
 			case 3:
+				// OK
 				printf("選択した番号3を選択しました Buuble Sort \n");
-				 printf("Input Array: ");
-				 display_Bubble_Sort();
 				 printf("\n");
 
 				 bubbleSort();
-				 printf("\nOutput Array: ");
+				 printf("\n Finish Sorting Output Array: ");
 				 display_Bubble_Sort();
 				break;
 			case 4:
+				// ok
 				printf(" SelectSortに 4 を選択した \n");
 				Test_Spead();
+				printf("Finish Sorting");
+				DisplaySelectSort();
 				break;
 			case 5:
 				//
@@ -53,7 +57,10 @@ void MainPage()
 				//
 				break;
 			case 8:
-				//
+				//ffailed
+				printf("Quick_Sort 8 を選択した \n");
+				testSpeed();
+				DisplayQuickSort();
 				break;
 			case 9:
 				//

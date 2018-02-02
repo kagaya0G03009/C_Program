@@ -7,7 +7,6 @@
 #include <stdio.h>
 #include <stdbool.h>
 #include <time.h>
-#define MAX 10
 #define N 10000
 static long x, a[N];
 
@@ -33,13 +32,15 @@ void bubbleSort() {
   		clock_t t1,t2;
   		time(&s);
   		srand(s);
+  		//printf("Random Array %d size \n",N);
   		for(x = 0; x<N ; x++)
   		{
   			a[x] = rand() % N;
+  			printf("%d ",a[x]);
   		}
   		t1 = clock();
 
-
+  		printf("\n");
    bool swapped = false;
 
    // loop through all numbers
@@ -48,7 +49,7 @@ void bubbleSort() {
 
       // loop through numbers falling ahead
       for(j = 0; j < N-1-i; j++) {
-         printf("     Items compared: [ %d, %d ] ", a[j],a[j+1]);
+        // printf("     Items compared: [ %d, %d ] ", a[j],a[j+1]);
 
          // check if next number is lesser than current no
          //   swap the numbers.
@@ -60,9 +61,9 @@ void bubbleSort() {
             a[j+1] = temp;
 
             swapped = true;
-            printf(" => swapped [%d, %d]\n",a[j],a[j+1]);
+           // printf(" => swapped [%d, %d]\n",a[j],a[j+1]);
          }else {
-            printf(" => not swapped\n");
+           // printf(" => not swapped\n");
          }
 
       }
@@ -74,10 +75,10 @@ void bubbleSort() {
       }
 
       printf("Iteration %d#: ",(i+1));
-      display_Bubble_Sort();
+      //display_Bubble_Sort();
       t2 = clock();
-      		printf("sorting in 10000 Array time is \n");
-      		printf("%.2fsec \n",(double)(t2-t1));
+      		printf("sorting in %d Array time is \n",N);
+      		printf("%.2fsec \n",(double)(t2-t1) );
       		printf("\n");
    }
 
@@ -94,9 +95,6 @@ void bubbleSort() {
  * */
 
 
-void BubleSort(){
 
-
-}
 
 

@@ -10,6 +10,8 @@
 #include "Queue.h"
 #include <ctype.h>
 #include <string.h>
+#include "Tictactoe.h"
+#include <time.h>
 void MainPage()
 {
 	int option ;
@@ -20,15 +22,15 @@ void MainPage()
 			switch(option)
 			{
 			case 1:
-				printf("You Selected number 1 Stack ");
+				printf("選択した番号1のスタック \n");
 				Stackpage();
 				break;
 			case 2:
-				printf("You Selected number 2  Queue ");
+				printf("選択した番号2のキュー \n");
 			    QueueMain();
 				break;
 			case 3:
-				printf("You selected number 3 Selected sort");
+				printf("選択した番号3を選択しました Buuble Sort \n");
 				 printf("Input Array: ");
 				 display_Bubble_Sort();
 				 printf("\n");
@@ -38,7 +40,8 @@ void MainPage()
 				 display_Bubble_Sort();
 				break;
 			case 4:
-				//
+				printf(" SelectSortに 4 を選択した \n");
+				Test_Spead();
 				break;
 			case 5:
 				//
@@ -54,6 +57,8 @@ void MainPage()
 				break;
 			case 9:
 				//
+				 View();
+				 Get_Final_board();
 				break;
 			case 10:
 				//
@@ -71,17 +76,29 @@ void MainPage()
 				exit(1);
 
 			}
-			printf("Please Enter a number 1 - 10  11 to Exit \n");
-			printf("Enter 1  a for Stack \n");
-			printf("Enter 2 a for Queue \n ");
-			printf("Enter 3 a for Bubble_Sort");
+			printf("\t1〜10の数字を入力してください  11を終了する \n");
+			printf("\tスタックを使用するには1を入力してください \n");
+			printf("\tキューを使用するには2を入力してください \n");
+			printf("\tBubble_Sortを使用するには3を入力してください \n");
+			printf("\tSelectSortを使用するには4を入力してください \n");
+			printf("\t挿入ソートを使用するには5を入力します \n ");
+			printf("\tマージソートを使用するには6を入力してください \n");
+			printf("\tシェルソートを使用するには7を入力してください \n");
+			printf("\tQuick_Sortを使用するには8を入力してください \n");
+			printf("\ttictactoeを再生するには9を入力してください \n ");
+			printf("\tスペースを空けるメインページをクリアする 10を入力してください \n");
+			printf("\t11プログラムを終了する\n1");
 			// add more the display to the the work here;
 
 			// need to refactor this to check the letter ;
-			scanf("%d",&option);
+			printf("番号を入力してください ");scanf("%d",&option);
 			if(option <= 10)
 			{
-				printf("Please Enter a valid number ");
+				printf("有効な番号を入力してください1  -  10 \n");
+			}
+			else if (option == 11)
+			{
+				printf("デモを使用していただきありがとうございます \n");
 			}
 
 

@@ -57,7 +57,7 @@ void QueueMain()
 
 	                case 4:
 
-	                exit(1);
+	                return;
 
 	                default:
 

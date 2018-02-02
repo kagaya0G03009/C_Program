@@ -6,3 +6,4 @@
  */
 
 void SelecSort(long n, long a[]);
+void Test_Spead();

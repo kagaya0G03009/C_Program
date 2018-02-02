@@ -15,6 +15,7 @@
 #include "SelectSort.h"
 #include "Stack.h"
 #include "Queue.h"
+#include "SelectSort.h"
 #define N 10000
 
 int main(void)

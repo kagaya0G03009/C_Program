@@ -48,13 +48,16 @@ void MainPage()
 				DisplaySelectSort();
 				break;
 			case 5:
-				//
+				// ok
+				Test_InsertionSort();
 				break;
 			case 6:
 				//
 				break;
 			case 7:
-				//
+				//ok
+				printf("Shell 7 を選択した \n");
+				TestSpeedShell();
 				break;
 			case 8:
 				//ffailed
@@ -63,12 +66,12 @@ void MainPage()
 				DisplayQuickSort();
 				break;
 			case 9:
-				//
+				//ok
 				 View();
 				 Get_Final_board();
 				break;
 			case 10:
-				//
+				//ok
 				printf("\n");
 				printf("\n");
 				printf("\n");
@@ -79,10 +82,11 @@ void MainPage()
 				break;
 
 			case 11:
-
+				// ok
 				exit(1);
 
 			}
+			// ok
 			printf("\t1〜10の数字を入力してください  11を終了する \n");
 			printf("\tスタックを使用するには1を入力してください \n");
 			printf("\tキューを使用するには2を入力してください \n");
@@ -95,7 +99,7 @@ void MainPage()
 			printf("\ttictactoeを再生するには9を入力してください \n ");
 			printf("\tスペースを空けるメインページをクリアする 10を入力してください \n");
 			printf("\t11プログラムを終了する\n1");
-			// add more the display to the the work here;
+
 
 			// need to refactor this to check the letter ;
 			printf("番号を入力してください ");scanf("%d",&option);
@@ -112,6 +116,6 @@ void MainPage()
 
 
 
-		}
+		}// end of while
 
-}
+}// end of main

@@ -5,9 +5,7 @@
  *      Author: kagaya
  */
 
-#ifndef ALGORITHMS_INSERTIONSORT_H_
-#define ALGORITHMS_INSERTIONSORT_H_
-
-
-
-#endif /* ALGORITHMS_INSERTIONSORT_H_ */
+ void printline_Count(int count);
+ void display_Insertion_Sort();
+ void insertionSort();
+ void Test_InsertionSort();

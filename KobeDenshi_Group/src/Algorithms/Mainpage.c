@@ -12,6 +12,7 @@
 #include <string.h>
 #include "Tictactoe.h"
 #include <time.h>
+#include "Quick_Sort.h"
 void MainPage()
 {
 	int option ;
@@ -36,9 +37,7 @@ void MainPage()
 				printf("選択した番号3を選択しました Buuble Sort \n");
 				 printf("\n");
 
-				 bubbleSort();
-				 printf("\n Finish Sorting Output Array: ");
-				 display_Bubble_Sort();
+				 TEst_Buble_Sort();
 				break;
 			case 4:
 				// ok
@@ -49,10 +48,13 @@ void MainPage()
 				break;
 			case 5:
 				// ok
+				printf("挿入ソート 5 を選択した \n");
 				Test_InsertionSort();
 				break;
 			case 6:
-				//
+				// ok
+				printf("マージソート 6 を選択した \n");
+				Test_Merge_Sort();
 				break;
 			case 7:
 				//ok
@@ -60,10 +62,9 @@ void MainPage()
 				TestSpeedShell();
 				break;
 			case 8:
-				//ffailed
+				//ok
 				printf("Quick_Sort 8 を選択した \n");
-				testSpeed();
-				DisplayQuickSort();
+				Test_Speed_Quick_Sort();
 				break;
 			case 9:
 				//ok

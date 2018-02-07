@@ -5,81 +5,17 @@
  *      Author: kagaya
  */
 
+// quickSort.c
 #include <stdio.h>
-#include <stdbool.h>
 #include <time.h>
-#define N 10
-static long  a[N];
+
+#define N 10000
+static long a[N];
+
+void Test_Speed_Quick_Sort()
+{
 
 
-void printline(int count) {
-   int i;
-
-   for(i = 0;i <count-1;i++) {
-      printf("=");
-   }
-
-   printf("=\n");
-}
-
-void display() {
-   int i;
-   printf("[");
-
-   // navigate through all items
-   for(i = 0;i<N;i++) {
-      printf("%d ",a[i]);
-   }
-
-   printf("]\n");
-}
-
-void swap(int num1, int num2) {
-   int temp = a[num1];
-   a[num1] = a[num2];
-   a[num2] = temp;
-}
-
-int partition(int left, int right, int pivot) {
-   int leftPointer = right -1;
-   int rightPointer = right;
-
-   while(true) {
-      while(a[++leftPointer] < pivot) {
-         //do nothing
-      }
-
-      while(rightPointer > 0 && a[--rightPointer] > pivot) {
-         //do nothing
-      }
-
-      if(leftPointer >= rightPointer) {
-         break;
-      } else {
-         printf(" item swapped :%d,%d\n", a[leftPointer],a[rightPointer]);
-         swap(leftPointer,rightPointer);
-      }
-   }
-
-   printf(" pivot swapped :%d,%d\n", a[leftPointer],a[right]);
-   swap(leftPointer,right);
-   printf("Updated Array: ");
-   display();
-   return leftPointer;
-}
-
-void quickSort(int left, int right) {
-   if(right-left <= 0) {
-      return;
-   } else {
-      int pivot = a[right];
-      int partitionPoint = partition(left, right, pivot);
-      quickSort(left,partitionPoint-1);
-      quickSort(partitionPoint+1,right);
-   }
-}
-
-void testSpeed() {
 	int i;
 	time_t s;
 	clock_t t1,t2;
@@ -89,30 +25,73 @@ void testSpeed() {
 	{
 	a[i] = rand() % N;
 	}
+	printf("\n\nUnsorted array is: \n ");
+		for(i = 0; i < N; i++){
+			printf(" %d ", a[i]);
+		}
+
 	t1 = clock();
-	 printf("Input Array: ");
-	 display();
-	 printline(50);
-	 quickSort(0,N-1);
-	 printf("Output Array: ");
-	 display();
-	 printline(50);
+	quickSort(0,N-1);
 	t2 = clock();
+	printf("Quick_Sort  \n");
+	printf("\n");
+	printf("\n\ Finish Sorting nSorted array is: \n ");
+		for(i = 0; i < N; i++){
+			printf(" %d ", a[i]);
+		}
+	printf("\n");
 	printf("sorting in %d Array time is \n",N);
+	printf("Finish Sorting time is = ");
 	printf("%.2fsec \n",(double)(t2-t1));
 	printf("\n");
 
+
+
+
+
+
 }
 
-void DisplayQuickSort()
+
+
+
+
+
+
+long partition(long left, long right)
 {
-	 int i;
-	   printf("[");
+    int pivot_element = a[left];
+    int lb = left, ub = right;
+    int temp;
 
-	   // navigate through all items
-	   for(i = 0; i < N; i++) {
-	      printf("%d ",a[i]);
-	   }
-
-	   printf("]\n");
+    while (left < right)
+    {
+        while(a[left] <= pivot_element)
+            left++;
+        while(a[right] > pivot_element)
+            right--;
+        if (left < right)
+        {
+            temp        = a[left];
+            a[left]  = a[right];
+            a[right] = temp;
+        }
+    }
+    a[lb] = a[right];
+    a[right] = pivot_element;
+    return right;
 }
+
+void quickSort(long left, long right)
+{
+    if (left < right)
+    {
+        long pivot = partition(left, right);
+        quickSort(left, pivot-1);
+        quickSort(pivot+1, right);
+    }
+}
+
+
+
+

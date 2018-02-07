@@ -72,7 +72,7 @@ void bubbleSort() {
 
 void TEst_Buble_Sort()
 {
-	time_t s;
+			time_t s;
 	  		clock_t t1,t2;
 	  		time(&s);
 	  		srand(s);
@@ -81,14 +81,15 @@ void TEst_Buble_Sort()
 	  		{
 	  			a[x] = rand() % N;
 	  		}
-	  		printf("Unsorting output Array \n");
-	  		display_Bubble_Sort();
+	  		//printf("Unsorting output Array \n");
+	  		//display_Bubble_Sort();
+	  		printf("\n");
 	  		t1 = clock();
 	  		bubbleSort();
 	  		t2 = clock();
-	  		printf("\n Finish Sorting Output Array: \n ");
-	  		display_Bubble_Sort();
-	  	    printf("Sorting in %d Array time is ",N);
+	  		//printf("\n Finish Sorting Output Array: \n ");
+	  		//display_Bubble_Sort();
+	  	    printf(" buuble Sorting in %d Array time is ",N);
 	  	    printf("%.2fsec \n",(double)(t2-t1) );
 	  	    printf("\n");
 

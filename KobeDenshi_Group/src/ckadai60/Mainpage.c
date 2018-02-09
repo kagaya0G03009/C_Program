@@ -9,11 +9,17 @@
 #include <string.h>
 #include <time.h>
 
-#include "../ckadai60/Queue.h"
-#include "../ckadai60/Quick_Sort.h"
-#include "../ckadai60/SelectSort.h"
-#include "../ckadai60/Stack.h"
-#include "../ckadai60/Tictactoe.h"
+#include "Queue.h"
+#include "SelectSort.h"
+#include "InSertionSort.h"
+#include "Stack.h"
+#include "Mainpage.h"
+#include "Merge.h"
+#include "Bubble_Sort.h"
+#include "Quick_Sort.h"
+#include "SelectSort.h"
+#include "Shell.h"
+#include "Tictactoe.h"
 void MainPage()
 {
 	int option ;

@@ -5,6 +5,6 @@
  *      Author: kagaya
  */
 
-Test_Merge_Sort();
-sort();
-merging(int low, int mid, int high);
+void Test_Merge_Sort();
+void sort();
+void merging(int low, int mid, int high);

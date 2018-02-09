@@ -5,14 +5,15 @@
  *      Author: kagaya
  */
 #include <time.h>
-#include "SelectSort.h"
-#include "Stack.h"
-#include "Queue.h"
 #include <ctype.h>
 #include <string.h>
-#include "Tictactoe.h"
 #include <time.h>
-#include "Quick_Sort.h"
+
+#include "../ckadai60/Queue.h"
+#include "../ckadai60/Quick_Sort.h"
+#include "../ckadai60/SelectSort.h"
+#include "../ckadai60/Stack.h"
+#include "../ckadai60/Tictactoe.h"
 void MainPage()
 {
 	int option ;

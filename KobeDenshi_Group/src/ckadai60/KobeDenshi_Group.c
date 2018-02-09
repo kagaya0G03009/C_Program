@@ -12,11 +12,19 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "SelectSort.h"
-#include "Stack.h"
 #include "Queue.h"
 #include "SelectSort.h"
-#define N 10000
+#include "InSertionSort.h"
+#include "Stack.h"
+#include "Mainpage.h"
+#include "Merge.h"
+#include "Bubble_Sort.h"
+#include "Quick_Sort.h"
+#include "SelectSort.h"
+#include "Shell.h"
+#include "Tictactoe.h"
+
+
 
 int main(void)
 {	// this is mainpage

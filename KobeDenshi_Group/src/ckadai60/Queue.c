@@ -4,9 +4,10 @@
  *  Created on: Jan 30, 2018
  *      Author: kagaya
  */
+#include "../ckadai60/Queue.h"
+
 #include <stdio.h>
 #include <stdlib.h>
-#include "Queue.h"
 #define MAX 50
 int queue_array[MAX];
 int rear = - 1;

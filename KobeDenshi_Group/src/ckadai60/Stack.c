@@ -1,4 +1,4 @@
-#include "Stack.h"
+#include "../ckadai60/Stack.h"
 
 #include <stdio.h>
 #include <stdlib.h>

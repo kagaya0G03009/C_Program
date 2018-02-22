@@ -5,14 +5,21 @@
  *      Author: kagaya
  */
 #include <time.h>
-#include "SelectSort.h"
-#include "Stack.h"
-#include "Queue.h"
 #include <ctype.h>
 #include <string.h>
-#include "Tictactoe.h"
 #include <time.h>
+
+#include "Queue.h"
+#include "SelectSort.h"
+#include "InSertionSort.h"
+#include "Stack.h"
+#include "Mainpage.h"
+#include "Merge.h"
+#include "Bubble_Sort.h"
 #include "Quick_Sort.h"
+#include "SelectSort.h"
+#include "Shell.h"
+#include "Tictactoe.h"
 void MainPage()
 {
 	int option ;

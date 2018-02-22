@@ -4,7 +4,8 @@
  *  Created on: Jan 30, 2018
  *      Author: kagaya
  */
-#include "SelectSort.h"
+#include "../ckadai60/SelectSort.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
